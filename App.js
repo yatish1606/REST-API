@@ -97,54 +97,6 @@ app.route('/articles/:articleTitle')
 
 
 
-
-// app.get('/articles', function(req,res){
-
-//     Article.find(function(err,foundArticles){
-
-//         if(err){
-//             res.send(err)
-//         }
-//         else {
-//             res.send(foundArticles)
-//         }
-        
-//     });
-// });
-
-
-// app.delete("/articles",function(req,res){
-//     Article.deleteMany(function(err){
-//         if(err) {
-//             res.send(err)
-//         }
-//         else {
-//             res.send("Deleted Successfully")
-//         }    
-//     });
-// });
-
-
-// app.post('/articles' , function(req,res){
-    
-//     const newArticle = new Article({
-//         title: req.body.title,
-//         content: req.body.content
-//     })
-
-//     newArticle.save(function(err){
-//         if(err){
-//             res.send(err)
-//         } 
-//         else {
-//             res.send('Successfully added a new record!')
-//         }
-//     })
-// })
-
-
-
-
 app.listen(3000, function(){
     console.log('Listening on port 3000')
 })
